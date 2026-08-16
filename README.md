@@ -69,10 +69,10 @@ Training ran for 8 epochs (early stopping triggered — validation accuracy
 peaked early and further epochs did not sustainably improve it).
 
 ### Loss Curve
-![Loss Curve](results/loss-graph.png)
+![Loss Curve](screenshots/loss-graph.png)
 
 ### Accuracy Curve
-![Accuracy Curve](results/accuracy-graph.png)
+![Accuracy Curve](screenshots/accuracy-graph.png)
 
 Best validation accuracy: **~98.5%** (epoch 2) — that checkpoint is what's
 saved to `model/210137.pth`. Validation loss/accuracy is noisy between
@@ -87,7 +87,7 @@ converges again by epoch 8, tracking the training curve closely.
 **Overall test accuracy: 97.84%** (2,718 / 2,778 correct)
 
 ### Confusion Matrix
-![Confusion Matrix](results/confusion-matrix.png)
+![Confusion Matrix](screenshots/confusion-matrix.png)
 
 | Class | Precision | Recall | Support |
 |---|---|---|---|
@@ -100,7 +100,7 @@ loss = Banana's precision loss). Orange has perfect precision and recall on
 the standard test set.
 
 ### Error Analysis
-![Error Analysis](results/error-analysis.png)
+![Error Analysis](screenshots/error-analysis.png)
 
 The three misclassified examples are all pale yellow/green apple varieties
 with a prominent stem — visually closer to a banana's color and elongated
@@ -108,7 +108,7 @@ stem shape than a typical red apple, which explains why the model confuses
 them specifically with Banana rather than Orange.
 
 ### Sample Augmented Training Data
-![Sample Training Data](results/sample-training-data.png)
+![Sample Training Data](screenshots/sample-training-data.png)
 
 Shows the training-time augmentation in effect: random crop/rotation, color
 jitter, and `RandomErasing` (visible as the gray occlusion patches) — this is
@@ -119,7 +119,7 @@ exact pixel layouts.
 
 ## Real-World (Smartphone Photo) Predictions
 
-![Custom Prediction Gallery](results/prediction-gallery.png)
+![Custom Prediction Gallery](screenshots/prediction-gallery.png)
 
 | Photo | True Class | Predicted | Confidence | Correct? |
 |---|---|---|---|---|
